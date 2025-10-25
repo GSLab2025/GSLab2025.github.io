@@ -169,11 +169,13 @@ section {
   }
 }
 
-.profile-headshot img {
-  width: 20%;
-  max-height: 250px;
-  object-fit: cover;
+.profile-headshot {
+  max-width: 200px;      /* limit width */
+  width: 100%;           /* allow it to shrink */
+  height: auto;          /* preserve aspect ratio */
+  border-radius: 50%;    /* optional — makes it circular */
   display: block;
+  margin: 0 auto 1rem;   /* centre and add bottom margin */
 }
 
 /* Publication styles */
