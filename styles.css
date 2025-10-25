@@ -131,6 +131,45 @@ section {
   width: 100%;
 }
 
+.welcome-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.welcome-text {
+  flex: 1 1 400px;
+}
+
+.welcome-images {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.welcome-images img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.welcome-images figcaption {
+  text-align: center;
+  font-size: 0.875rem;
+  margin-top: 0.3rem;
+}
+
+/* Responsive: on small screens stack images below text */
+@media (max-width: 768px) {
+  .welcome-section {
+    flex-direction: column;
+  }
+}
+
+
 /* Publication styles */
 .publications-header {
   display: flex;
