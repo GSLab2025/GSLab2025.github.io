@@ -172,7 +172,7 @@ section {
 .profile-headshot {
   max-width: 100px;
   height: auto;
-  border-radius: 30%;        /* optional – for circular headshot */
+  object-fit: cover;
   display: block;
   margin-bottom: 1rem;
 }
