@@ -169,9 +169,9 @@ section {
   }
 }
 
-.profile-headshot {
+.profile-headshot img {
   max-width: 100px;
-  height: auto;
+  height: 20%;
   object-fit: cover;
   display: block;
   margin-bottom: 1rem;
