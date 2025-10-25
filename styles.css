@@ -170,7 +170,7 @@ section {
 }
 
 .profile-headshot img {
-  max-width: 100px;
+  width: 20%;
   height: 20%;
   object-fit: cover;
   display: block;
