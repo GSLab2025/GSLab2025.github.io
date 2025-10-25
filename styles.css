@@ -171,10 +171,9 @@ section {
 
 .profile-headshot img {
   width: 20%;
-  height: 20%;
+  max-height: 250px;
   object-fit: cover;
   display: block;
-  margin-bottom: 1rem;
 }
 
 /* Publication styles */
