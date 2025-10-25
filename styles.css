@@ -170,13 +170,14 @@ section {
 }
 
 .profile-headshot {
-  max-width: 200px;      /* limit width */
-  width: 100%;           /* allow it to shrink */
-  height: auto;          /* preserve aspect ratio */
-  border-radius: 50%;    /* optional — makes it circular */
+  max-width: 200px !important;   /* limit the width */
+  width: 100%;                   /* let it shrink responsively */
+  height: auto !important;       /* preserve aspect ratio */
+  border-radius: 50%;            /* optional circular */
   display: block;
-  margin: 0 auto 1rem;   /* centre and add bottom margin */
+  margin: 0 auto 1rem;           /* center and add space below */
 }
+
 
 /* Publication styles */
 .publications-header {
