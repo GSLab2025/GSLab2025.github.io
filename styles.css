@@ -170,9 +170,9 @@ section {
 }
 
 .profile-headshot {
-  max-width: 200px;
+  max-width: 100px;
   height: auto;
-  border-radius: 50%;        /* optional – for circular headshot */
+  border-radius: 30%;        /* optional – for circular headshot */
   display: block;
   margin-bottom: 1rem;
 }
