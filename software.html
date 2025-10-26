@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Software – Ganesh Sivaraman Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="software.html">Software</a></li>
+        <li><a href="join.html">Join&nbsp;Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Software</h1>
+
+    <section id="overview">
+      <p>
+        Our group develops and releases open research software in atomistic simulation, machine-learned interatomic potentials, lifelong learning for large language models, and molecular AI. All original software contributions are made publicly available through our GitHub organization / repositories.
+      </p>
+      <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/pythonpanda2" target="_blank" rel="noopener">github.com/pythonpanda2</a>
+      </p>
+    </section>
+
+    <section id="active-learning">
+      <h2>1. Active Learning for Atomistic Simulation and MLIPs</h2>
+
+      <article>
+        <h3>Active-learning workflow for Gaussian Approximation Potentials (GAP)</h3>
+        <p>
+          Automated active learning workflow for training Gaussian Approximation Potentials (GAP) for atomistic simulations. The workflow closes the loop between sampling, uncertainty estimation, and model refinement.
+        </p>
+        <p>
+          Repository:&nbsp;
+          <a href="https://github.com/pythonpanda2/active-learning-md" target="_blank" rel="noopener">active-learning-md</a><br>
+          Tutorial / hands-on materials:&nbsp;
+          <a href="https://github.com/pythonpanda2/psik-workshop-AL-GAP" target="_blank" rel="noopener">psik-workshop-AL-GAP</a>
+        </p>
+      </article>
+
+      <article>
+        <h3>GPU-accelerated active learning with Gaussian Processes / Deep Kernel Learning</h3>
+        <p>
+          A scalable active learning framework implemented in PyTorch/GPyTorch. Uses Gaussian process regression and Deep Kernel Learning on GPUs to accelerate query selection and model improvement.
+        </p>
+        <p>
+          Repository:&nbsp;
+          <a href="https://github.com/TheJacksonLab/ECG_ActiveLearning" target="_blank" rel="noopener">ECG_ActiveLearning</a>
+        </p>
+      </article>
+
+      <article>
+        <h3>AL4GAP: Ensemble active learning at scale</h3>
+        <p>
+          AL4GAP is an automated workflow for fitting machine-learned interatomic potentials (MLIPs) across combinatorial chemical spaces. It uses Cray SmartSim for ensemble-style active learning on leadership-class high-performance computing systems.
+        </p>
+        <p>
+          Repository:&nbsp;
+          <a href="https://github.com/pythonpanda2/AL4GAP_JCP" target="_blank" rel="noopener">AL4GAP_JCP</a>
+        </p>
+      </article>
+    </section>
+
+    <section id="lifelong-learning">
+      <h2>2. Lifelong / Continual Learning for Large Language Models</h2>
+
+      <article>
+        <h3>Catastrophic forgetting mitigation in chemistry-oriented LLMs</h3>
+        <p>
+          This project studies catastrophic forgetting in a Mistral-7B model fine-tuned on sequential chemistry tasks (e.g., reaction yield prediction) and develops continual / life-long learning strategies to preserve prior knowledge while learning new chemistry data.
+        </p>
+        <p>
+          JAX / Equinox implementation:&nbsp;
+          <a href="https://github.com/pythonpanda2/CL_MISTRAL7B_REACT" target="_blank" rel="noopener">CL_MISTRAL7B_REACT</a>
+        </p>
+      </article>
+    </section>
+
+    <section id="molecular-ml">
+      <h2>3. Molecular Machine Learning</h2>
+
+      <article>
+        <h3>MOLAN: Machine Learning Workflow for Molecular Analysis</h3>
+        <p>
+          MOLAN provides an end-to-end pipeline for molecular analysis tasks, including representation generation, model training, and evaluation for chemical and materials systems.
+        </p>
+        <p>
+          Repository:&nbsp;
+          <a href="https://github.com/pythonpanda2/molan" target="_blank" rel="noopener">molan</a>
+        </p>
+      </article>
+
+      <article>
+        <h3>AI4PFAS: Deep learning for PFAS toxicity</h3>
+        <p>
+          AI4PFAS is a deep learning effort aimed at assessing toxicity and molecular behaviour in PFAS-class compounds. The goal is to accelerate environmental health assessment with data-driven inference.
+        </p>
+        <p>
+          Repository:&nbsp;
+          <a href="https://github.com/AI4PFAS/AI4PFAS" target="_blank" rel="noopener">AI4PFAS</a>
+        </p>
+      </article>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Ganesh Sivaraman Lab – SUNY Buffalo</p>
+  </footer>
+</body>
+</html>
