@@ -178,6 +178,27 @@ section {
   margin: 0 auto 1rem;           /* center and add space below */
 }
 
+.social-links-header li {
+  list-style: none;
+}
+
+.social-links-header a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: var(--text-secondary);
+  transition: color var(--transition-time) ease;
+}
+
+.social-links-header a:hover {
+  color: var(--accent-color);
+}
+
+.social-links-header i {
+  font-size: 1.1rem;
+}
+
 
 /* Publication styles */
 .publications-header {
