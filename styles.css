@@ -102,6 +102,37 @@ nav a:hover, .social-links-header a:hover {
   margin-right: 0.4rem;
 }
 
+#contact {
+  margin-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1rem;
+}
+
+#contact p {
+  margin: 0.4rem 0;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+#contact ul li {
+  display: flex;
+  align-items: center;
+}
+
+#contact i {
+  margin-right: 0.4rem;
+  color: var(--accent-color);
+  font-size: 1.1rem;
+}
+
+
 /* Unified animation for elements (not sections) */
 .publication-item, .award-item, .service-category, .misc-item, .news-list li {
   transition: transform var(--transition-time) ease;
