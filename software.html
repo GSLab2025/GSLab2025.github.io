@@ -32,15 +32,13 @@
     <h2>1. Long-Range Physics and Attention Models</h2>
 
     <article>
-      <h3>Reciprocal-Space Attention (RSA)</h3>
+      <h3>Reciprocal-Space Gated Attention (RSGA)</h3>
       <p>
-      RSA is a next-generation architecture that captures long-range interactions directly in reciprocal (Fourier) space using Fourier positional encoding and kernelized attention. 
-      It provides linear-scaling, charge-agnostic modeling of electrostatics and dispersion within machine-learned interatomic potentials. 
-      This framework can be combined with any short range MLIP backbone in an end-to-end differential fashion and allows access to long-range physics seamlessly, enabling density functional theory accurate modeling at scale.
+      The core RSGA modules used to introduce a reciprocal-space long-range correction into a short-range local model via gated linear attention.
       </p>
       <p>
         Repository:&nbsp;
-        <a href="https://github.com/rfhari/reciprocal_space_attention" target="_blank" rel="noopener">
+        <a href="https://github.com/GSLab2025/RSGA" target="_blank" rel="noopener">
         reciprocal_space_attention
         </a>
       </p>
