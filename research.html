@@ -1,12 +1,71 @@
-<!DOCTYPE html><html lang="en"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Research | Ganesh Sivaraman Lab</title><link rel="stylesheet" href="styles.css"></head><body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research | Ganesh Sivaraman Lab</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 <header class="site-header"><div class="nav-wrap"><div class="site-title">Ganesh Sivaraman Lab · University at Buffalo</div><nav><ul>
-<li><a href="index.html">Home</a></li><li><a class="active" href="research.html">Research</a></li><li><a href="about.html">About the PI</a></li><li><a href="team.html">Team</a></li><li><a href="publications.html">Publications & Patents</a></li><li><a href="software.html">Software</a></li><li><a href="join.html">Join Us</a></li>
+<li><a href="index.html">Home</a></li><li><a class="active" href="research.html">Research</a></li><li><a href="about.html">About the PI</a></li><li><a href="team.html">Team</a></li><li><a href="publications.html">Publications &amp; Patents</a></li><li><a href="software.html">Software</a></li><li><a href="join.html">Join Us</a></li>
 </ul></nav></div></header>
-<main><section><h1 class="page-title">Research</h1><p class="subtitle">Our research program is organized into three integrated thrusts.</p>
+
+<main>
+<section class="page-hero">
+<p class="eyebrow">Research program</p>
+<h1 class="page-title">Machine learning that connects atoms, experiments, and materials design.</h1>
+<p class="subtitle">Our research program develops physically grounded machine-learning models and uses them to interpret real materials and molecular systems.</p>
+</section>
+
+<section>
+<h2>Research Thrusts</h2>
 <div class="thrust-grid">
-<article class="card"><h3>Thrust 1: Machine-Learned Interatomic Potentials with Long-Range Physics</h3><p>Automated active-learning workflows for MLIP training and robust long-range interactions.</p></article>
-<article class="card"><h3>Thrust 2: AI-Guided Discovery of Safer, High-Performance Biomedical Monomers</h3><p>Computational-experimental co-design with UB School of Dental Medicine.</p></article>
-<article class="card"><h3>Thrust 3: MLIP-Driven Characterization of Real-World Experiments</h3><p>Pairing MLIPs with synchrotron experiments at Argonne National Laboratory.</p></article>
-</div></section></main><footer><p>© 2025 Ganesh Sivaraman Lab · Department of Materials Design & Innovation, University at Buffalo</p></footer></body></html>
+<article class="card thrust-card"><span class="card-kicker">Thrust 1</span><h3>Machine-Learned Interatomic Potentials with Long-Range Physics</h3><p>Automated active-learning workflows for MLIP training, reciprocal-space corrections, and robust simulations beyond short-range local environments.</p></article>
+<article class="card thrust-card"><span class="card-kicker">Thrust 2</span><h3>AI-Guided Discovery of Safer, High-Performance Biomedical Monomers</h3><p>Computational-experimental co-design with molecular machine learning, uncertainty-aware screening, and targeted validation.</p></article>
+<article class="card thrust-card"><span class="card-kicker">Thrust 3</span><h3>MLIP-Driven Characterization of Real-World Experiments</h3><p>Pairing machine-learned potentials with synchrotron, neutron, and high-temperature experiments to build models that reproduce measured structure.</p></article>
+</div>
+</section>
+
+<section class="experiment-showcase">
+<div>
+<p class="eyebrow">Example workflow</p>
+<h2>How experiments become atomistic models</h2>
+<p>In prior Argonne work, high-temperature X-ray and neutron measurements were used to guide active learning for machine-learned interatomic potentials. The key idea remains central to our lab: start from the data, train selectively, and validate the model against the experiment before using it to predict what is difficult to measure directly.</p>
+<div class="source-links">
+<a href="https://www.alcf.anl.gov/news/lasers-levitation-and-machine-learning-make-better-heat-resistant-materials" target="_blank" rel="noopener">Argonne/ALCF coverage</a>
+<a href="https://www.aps.anl.gov/APS-Science-Highlight/2021-04-16/building-a-better-simulation-for-a-better-refractory-oxide" target="_blank" rel="noopener">APS science highlight</a>
+</div>
+</div>
+
+<div class="validation-board" aria-label="Scientific workflow from measurement to active learning">
+<div class="board-panel xray-panel">
+<span>X-ray + neutron data</span>
+<div class="ridgeline"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</div>
+<div class="board-arrow">→</div>
+<div class="board-panel active-panel">
+<span>Active learning</span>
+<div class="training-cloud"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
+</div>
+<div class="board-arrow">→</div>
+<div class="board-panel sim-panel">
+<span>ML potential + MD</span>
+<div class="sim-lattice"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</div>
+</div>
+</section>
+
+<section>
+<h2>What Students Work On</h2>
+<div class="quick-grid">
+<article class="card student-card"><h3>Train models that know when they are uncertain</h3><p>Build active-learning loops that decide which atomic configurations need expensive reference calculations.</p></article>
+<article class="card student-card"><h3>Connect scattering data to atomic structure</h3><p>Use simulations to interpret diffraction, pair-distribution functions, and temperature-dependent structural changes.</p></article>
+<article class="card student-card"><h3>Add long-range physics to local ML models</h3><p>Develop reciprocal-space corrections and attention mechanisms for materials where local environments are not enough.</p></article>
+</div>
+</section>
+</main>
+
+<footer><p>© 2025 Ganesh Sivaraman Lab · Department of Materials Design &amp; Innovation, University at Buffalo</p></footer>
+</body>
+</html>
