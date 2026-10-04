@@ -12,18 +12,19 @@
 </head>
 <body>
   <header class="site-header"><div class="nav-wrap"><div class="site-title">Ganesh Sivaraman Lab · University at Buffalo</div><nav><ul>
-<li><a href="index.html">Home</a></li><li><a href="research.html">Research</a></li><li><a href="about.html">About the PI</a></li><li><a href="team.html">Team</a></li><li><a href="publications.html">Publications & Patents</a></li><li><a href="software.html">Software</a></li><li><a href="join.html">Join Us</a></li>
+<li><a href="index.html">Home</a></li><li><a href="research.html">Research</a></li><li><a href="about.html">About the PI</a></li><li><a href="team.html">Team</a></li><li><a href="publications.html">Publications &amp; Patents</a></li><li><a class="active" href="software.html">Software</a></li><li><a href="join.html">Join Us</a></li>
 </ul></nav></div></header>
 
   <main>
-    <h1>Software</h1>
+    <h1 class="page-title">Software</h1>
 
     <section id="overview">
       <p>
-        Our group develops, collaborated on, and releases open research software in atomistic simulation, machine-learned interatomic potentials, lifelong learning for large language models, and molecular AI. All original software contributions are made publicly available through our GitHub organization / repositories.
+        Our group develops and contributes to open research software for atomistic simulation, active learning, long-range machine-learned interatomic potentials, and molecular materials discovery. The entries below link code to the associated research.
       </p>
       <p>
         <strong>GitHub:</strong>
+        <a href="https://github.com/GSLab2025" target="_blank" rel="noopener">GSLab2025</a> and
         <a href="https://github.com/pythonpanda2" target="_blank" rel="noopener">github.com/pythonpanda2</a>
       </p>
     </section>
@@ -43,11 +44,53 @@
         </a>
       </p>
     </article>
+
+    <article id="rsga-optimized">
+      <h3>GPU-optimized Reciprocal-Space Gated Attention (RSGA)</h3>
+      <p>
+        Standalone RSGA modules for adding a reciprocal-space long-range correction to a short-range atomistic model. Shared geometry, reciprocal-grid caching, and chunked evaluation reduce repeated work and GPU memory use. The implementation was used for the In<sub>2</sub>Se<sub>3</sub> molecular-dynamics study below, with strict float64 performance validated on NVIDIA A100 and H100-class GPUs.
+      </p>
+      <p>
+        Repository:&nbsp;
+        <a href="https://github.com/GSLab2025/RSGA_OPTIMIZED" target="_blank" rel="noopener">RSGA_OPTIMIZED</a>
+      </p>
+      <p class="meta">
+        Associated preprint: <a href="publications.html#in2se3-2026">Boundary-driven phase transformation in layered 3R In<sub>2</sub>Se<sub>3</sub> captured by long range machine learning molecular dynamics</a> (ChemRxiv, 2026).
+      </p>
+    </article>
+
+    <article id="macersga-optimized">
+      <h3>GPU-optimized MACERSGA: RSGA integrated with MACE</h3>
+      <p>
+        The MACE-integrated implementation combines local MACE representations with RSGA corrections at each interaction layer. It provides the optimized float64 code used in the 2026 In<sub>2</sub>Se<sub>3</sub> simulations, with shared geometry and reciprocal-grid caching across RSGA layers.
+      </p>
+      <p>
+        Repository:&nbsp;
+        <a href="https://github.com/GSLab2025/RSGA_MACE_OPT" target="_blank" rel="noopener">RSGA_MACE_OPT</a>
+      </p>
+      <p class="meta">
+        Associated preprint: <a href="publications.html#in2se3-2026">Boundary-driven phase transformation in layered 3R In<sub>2</sub>Se<sub>3</sub> captured by long range machine learning molecular dynamics</a> (ChemRxiv, 2026).
+      </p>
+    </article>
     </section>
 
     
     <section id="active-learning">
-      <h2>2. Active Learning for Atomistic Simulation and MLIPs</h2>
+      <h2>2. Active Learning for Atomistic Modeling and Materials Discovery</h2>
+
+      <article id="elokriti">
+        <h3>EloKriti: Active learning for BPA-free dental resin candidates</h3>
+        <p>
+          Chemistry-aware active learning and multi-objective Bayesian optimization prioritize candidate backbones for explicit virtual-curing and molecular-dynamics evaluation. The workflow explores trade-offs in elastic modulus, volumetric shrinkage, and fractional free volume; reported properties and Pareto assignments come from the molecular-dynamics evaluations.
+        </p>
+        <p>
+          Repository:&nbsp;
+          <a href="https://github.com/hbalantr/Elokriti" target="_blank" rel="noopener">Elokriti</a>
+        </p>
+        <p class="meta">
+          Associated preprint: <a href="publications.html#dental-resin-2026">Accelerated Discovery of BPA-Free Dental Resin Candidates through Active Learning of Network-Emergent Properties</a> (ChemRxiv, 2026).
+        </p>
+      </article>
 
       <article>
         <h3>Active-learning workflow for Gaussian Approximation Potentials (GAP)</h3>
